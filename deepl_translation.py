@@ -52,8 +52,7 @@ class EntryWindow(Gtk.Window):
 
 if __name__ == "__main__":
     target = "DE"
-    print(os.listdir())
-    with open("DeeplTranslateGtk/auth.txt", "r") as f:
+    with open(f"{os.path.split(__file__)[0]}/auth.txt", "r") as f:
         auth = f.readline()
 
     headers = {
